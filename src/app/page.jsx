@@ -15,7 +15,6 @@ import charger from "@/assets/images/charger.png";
 import atv from "@/assets/images/Atv.png";
 import pro from "@/assets/images/15pro.png";
 import proMAx from "@/assets/images/15max.png";
-import lopto from "@/assets/images/Lapto.png";
 import povurbank from "@/assets/images/povurbank.png";
 import math from "@/assets/images/math.png";
 import img from "@/assets/images/photo.png";
@@ -24,8 +23,10 @@ import aksesuvar from "@/assets/images/aksesuvar.png";
 import box from "@/assets/images/box.png";
 import hamburger from "@/assets/images/hamburger.png";
 import dollor from "@/assets/images/dollor.png";
-import gogle from "@/assets/images/gogle.png";
-import appstore from "@/assets/images/appstore.png";
+// import gogle from "@/assets/images/gogle.png";
+// import appstore from "@/assets/images/appstore.png";
+import Products from "@/companents/Products";
+import Footer from "@/companents/Footer";
 export default function Home() {
   return (
     <div className=" container mx-auto w-[85%]">
@@ -228,81 +229,8 @@ export default function Home() {
           <Image src={proMAx} alt="Iphone 15 pro Max" width={360} />
         </div>
       </div>
-      <div className="mt-20 ">
-        <div className="flex gap-5">
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={lased} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">Latest Smart Watch </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$90.00</p>
-              <p>$100.00</p>
-            </div>
-          </div>{" "}
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={lopto} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">
-              Security smart camera
-            </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$850.00</p>
-              <p>$900.00</p>
-            </div>
-          </div>{" "}
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={pro} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">Iphone 15 pro max </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$1099.00</p>
-              <p>$1599.00</p>
-            </div>
-          </div>{" "}
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={charger} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">Drou safe charger</h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$34.00</p>
-              <p>$52.00</p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <div className="flex gap-5">
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={Laptop} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">
-              Apple Mackbook Air M3
-            </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$1099.00</p>
-              <p>$1199.00</p>
-            </div>
-          </div>{" "}
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={Ipad} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">Ipad mini Pro </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$599.00</p>
-              <p>$750.00</p>
-            </div>
-          </div>{" "}
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={atv} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">Home Entertainment </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$65.00</p>
-              <p>$80.00</p>
-            </div>
-          </div>{" "}
-          <div className="md:w-62 p-4 h-80  border-0 rounded-xl shadow-sm hover:shadow-2xl transition flex flex-col items-center gap-2">
-            <Image src={calonka} alt="samart wach" width={180} />
-            <h2 className="text-[#484848] text-[18px]">Homepad mini </h2>
-            <div className="flex  gap-2">
-              <p className="text-[#FF5B00]">$54.00</p>
-              <p>$68.00</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Products Page */}
+      <Products />
       <div className="mt-20 flex gap-5">
         <div className="flex flex-col items-start gap-3">
           <Image src={povurbank} alt="quvatlagich" width={400} />
@@ -363,40 +291,6 @@ export default function Home() {
           <p className="text-[#606060] text-center">
             Engrave your device with your name or a personal note.
           </p>
-        </div>
-      </div>
-      <div className="mt-20 flex  justify-between gap-4">
-        <div className="items-start flex flex-col gap-2">
-          <p className="font-semibold text-xl mb-4">Contact Us</p>
-          <p>Uzbekistan</p>
-          <p>+998 94 281 93 99</p>
-          <p>demo@exampledemo.com</p>
-          <p>Dji Demo Store</p>
-          <p>No, 12345 Freedom Tashkent </p>
-        </div>
-        <div className="items-start flex flex-col gap-2">
-          <p className="font-semibold text-xl mb-4">Information</p>
-          <p>Product Support</p>
-          <p>Checkout</p>
-          <p>License Policy</p>
-          <p>Affiliate</p>
-        </div>
-        <div className="items-start flex flex-col gap-2">
-          <p className="font-semibold text-xl mb-4">Customer Service</p>
-          <p>Help Centre</p>
-          <p>Raddem Vaucher</p>
-          <p>Contact Us</p>
-          <p>Policies & Rules</p>
-        </div>
-        <div className="items-start flex flex-col gap-2">
-          <p className="font-semibold text-xl mb-4">Download Our App</p>
-          <p>
-            Download our App & get extra 20% Discount on your first Order...!{" "}
-          </p>
-          <div className="flex gap-4">
-            <Image src={gogle} alt="Google link" width={180} />
-            <Image src={appstore} alt="App Store Link" width={180} />
-          </div>
         </div>
       </div>
     </div>

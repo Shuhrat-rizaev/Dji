@@ -1,8 +1,5 @@
 import Image from "next/image";
-import React from "react";
-// import logo from "../../public/image.png"
 import logo from "@/assets/images/logo.png";
-// import icon from "@/assets/images/icons.png";
 import iconca from "@/assets/images/Icons.png"
 
 const Navbar = () => {
